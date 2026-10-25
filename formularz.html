@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href ="index.html">Strona główna</a></li>
+                <li><a href ="siatka.html">Siatka zdjęć 3x3</a></li>
+                <li><a href ="formularz.html">Formularz</a></li>
+                <li><a href ="tekst_kolumnowy_1.html">Tekst Kolumnowy 1</a></li>
+                <li><a href ="tekst_kolumnowy_2.html">Tekst Kolumnowy 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Formularz danych osobowych</h1>
+        <form class="formularz-ososbowy">
+            <div class="pole">
+                <label for ="imie">Imię:</label>
+                <input type="text" id="imie" name="imie" placeholder="np. Jan" required>
+            </div>
+            <div class="pole">
+                <label for ="nazwisko">Nazwisko:</label>
+                <input type="text" id="nazwisko" name="nazwisko" placeholder="np Kolwalski" required> 
+            </div>
+              <div class="pole">
+                <label for ="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="np janKolwalski@gamil.com" required> 
+            </div>
+             <div class="pole">
+                <label for ="kod pocztowy">Kod pocztowy:</label>
+                <input type="kod pocztowy" id="kod pocztowy" name="kod pocztowy" placeholder="np 00-000" > 
+            </div>
+            <div class="pole">
+                <label for ="wiek">Wiek:</label>
+                <input type="number" id="wiek" name="wiek" min='1'  max="120"> 
+            </div>
+            <div class="pole">
+                <label>Płeć:</label>
+                <div class="radio-group">
+                    <input type="radio" id="kobieta" name="plec" value="kobieta">
+                    <label for="kobieta">Kobieta</label>
+                    <input type="radio" id="mezczyzna" name="plec" value="mezczyzna">
+                    <label for="mezczyzna">mężczyzna</label>
+                </div>
+            </div>
+            <div class="pole">
+                <label for="prawo_jazdy">Prawo jazdy</label>
+                <div class="radio-group">
+                    <input type="radio" id="pj-tak" name="prawo_jazdy" value="tak" required>
+                    <label for="pj-tak">Tak</label>
+                    <input type="radio" id="pj-nie" name="prawo_jazdy" value="nie" required>
+                    <label for="pj-nie">Nie</label>
+                </div>
+            </div>
+            <div class="pole">
+                <label for="wyksztalcenie_wyzsze">Wykształcenie wyższe</label>
+                <div class="radio-group">
+                    <input type="radio" id="wy-tak" value="tak" required>
+                    <label for="wy-tak">Tak</label>
+                    <input type="radio" id="wy-nie" value="nie" required>
+                    <label for="wy-nie">Nie</label>
+                </div>
+            </div>
+            <div class="pole">
+                <label for="uwagi">Dodatkowe uwagi:</label>
+                <textarea id="uwagi" name="uwagi" rows="3"></textarea>
+            </div>          
+            <button type="submit" class="sub-but">Wyślij</button>
+        </form>
+    </main>
+</body>
+</html>
